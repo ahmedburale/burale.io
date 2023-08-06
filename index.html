@@ -1,45 +1,139 @@
-<div id="lead">
-    <div id="lead-content">
-        <h1>Ahmed Burale</h1>
-        <h2>Junior Software Engineer & Data Analyst</h2>
-        <a href="https://www.linkedin.com/in/ahmed-burale/" class="btn-rounded-white" target="_blank">Download Resume</a>
-    </div>
-</div>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-<div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-        <div class="row">
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.jpg" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ahmed Burale - Junior Software Engineer & Data Analyst</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Ahmed Burale</h1>
+            <h2>Junior Software Engineer & Data Analyst</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <div id="lead-overlay"></div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
                 </div>
-                <div class="project-info">
-                    <h3>Grocery Store Inventory Management Project</h3>
-                    <p>This is a simple GUI project using JAVA program that allows to add manager to update and delete products in the catalog.</p>
-                    <a href="https://github.com/ahmedburale/CS-Final-Project" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Java Spring Data JPA Student Project</h3>
-                    <p>A simple student data project to showcase how to use Spring Data JPA with Spring Boot.</p>
-                    <a href="https://github.com/yourusername" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/project.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Budget Tracker</h3>
-                    <p>A simple app that will help users keep track of their money. Every user has its own dedicated wallet, which tracks the transactions made. They can both withdraw and deposit money.</p>
-                    <a href="https://github.com/amigoscode/group-project-a" target="_blank">View Project</a>
+                <div class="col-md-8">
+                    <p>
+                        I am a junior software engineer, data analyst, and IT specialist who wants to change the world
+                        by having an impact a large scale.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div id="experience" class="background-alt">
+        <!-- Your experience content here -->
+    </div>
+
+    <div id="education">
+        <!-- Your education content here -->
+    </div>
+
+    <div id="projects" class="background-alt">
+        <!-- Your projects content here -->
+    </div>
+
+    <div id="licenses & certifications">
+        <!-- Your licenses & certifications content here -->
+    </div>
+
+    <div id="skills">
+        <!-- Your skills content here -->
+    </div>
+
+    <div id="contact">
+        <!-- Your contact content here -->
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2022</span> Ahmed Burale
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/ahmedburale" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/ahmed-burale-3563b994/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function(event) {
+                event.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 80
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
